@@ -50,7 +50,25 @@ body:before{content:"";position:fixed;inset:-30%;pointer-events:none;background:
 .float-heart{position:fixed;pointer-events:none;z-index:2;animation:floatHeart 7s linear forwards;filter:drop-shadow(0 0 8px #ff5b8880)}
 @keyframes floatHeart{0%{opacity:0;transform:translateY(20px) scale(.5) rotate(-10deg)}12%{opacity:.75}100%{opacity:0;transform:translateY(-105vh) scale(1.15) rotate(25deg)}}
 .progress{position:absolute;left:18px;right:18px;bottom:13px;height:4px;border-radius:99px;background:#ff4f8118;overflow:hidden;z-index:3}.progress b{display:block;height:100%;width:0;background:linear-gradient(90deg,#ff4f81,#ffabc5);box-shadow:0 0 10px #ff4f8180;transition:width .5s}
-@media(max-width:600px){.card{width:94vw;height:90vh;margin:5vh auto;border-radius:34px}.quote{font-size:23px}.next{margin-top:32px}.brand{font-size:21px}.cloud span{font-size:16px}.card:after{border-radius:27px}}
+@media(max-width:600px){
+html,body{min-height:100%;height:100%;overflow:hidden}
+body{background:linear-gradient(160deg,#fff8fb 0%,#ffe1ec 48%,#ffc2d8 100%);-webkit-tap-highlight-color:transparent}
+.card{width:calc(100vw - 22px);height:calc(100dvh - 24px);min-height:0;margin:12px auto;border-radius:30px;box-shadow:0 18px 55px #8f174d30,0 0 35px #ff6f9c20}
+.card:after{inset:7px;border-radius:24px}
+.card:before{height:5px}
+.brand{top:18px;font-size:19px;letter-spacing:1.5px}
+.page{padding:58px 22px 54px;justify-content:center}
+.hearts{font-size:24px;letter-spacing:2px;margin-bottom:4px}
+.num{font-size:11px;margin:14px 0 18px}
+.quote{font-size:clamp(20px,6vw,24px);line-height:1.5;max-width:330px}
+.next{width:min(88%,300px);margin-top:30px;padding:15px 16px;border-radius:18px;font-size:15px;min-height:50px;display:flex;align-items:center;justify-content:center}
+.progress{left:16px;right:16px;bottom:10px;height:3px}
+.cloud span{font-size:14px;text-shadow:0 0 7px #ff468c,0 0 15px #ff9ac4}
+.poem{padding:58px 24px 50px;justify-content:flex-start;overflow-y:auto}
+.poem h1{font-size:28px;margin:10px 0 18px}
+.poem p{font-size:16px;line-height:1.7;margin:0 0 15px}
+.poem .next{margin-top:10px}
+}
 </style>
 </head>
 <body>
