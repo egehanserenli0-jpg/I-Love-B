@@ -30,13 +30,34 @@ body:not(:has(.page:target)) #q0{display:flex}
 .cloud span{position:absolute;white-space:nowrap;font-weight:900;font-size:clamp(18px,4.2vw,34px);text-shadow:0 0 8px #ff468c,0 0 20px #ff9ac4;animation:fly linear infinite;opacity:0}
 .cloud span:nth-child(1){left:3%;top:82%;animation-duration:8s}.cloud span:nth-child(2){left:68%;top:90%;animation-duration:9s}.cloud span:nth-child(3){left:25%;top:88%;animation-duration:10s}.cloud span:nth-child(4){left:80%;top:78%;animation-duration:11s}.cloud span:nth-child(5){left:43%;top:92%;animation-duration:8.5s}.cloud span:nth-child(6){left:5%;top:68%;animation-duration:10s}.cloud span:nth-child(7){left:72%;top:65%;animation-duration:12s}.cloud span:nth-child(8){left:18%;top:74%;animation-duration:9.5s}.cloud span:nth-child(9){left:55%;top:80%;animation-duration:11.5s}.cloud span:nth-child(10){left:87%;top:55%;animation-duration:8s}.cloud span:nth-child(11){left:35%;top:65%;animation-duration:13s}.cloud span:nth-child(12){left:50%;top:72%;animation-duration:7.5s}.cloud span:nth-child(13){left:10%;top:55%;animation-duration:10.5s}.cloud span:nth-child(14){left:90%;top:88%;animation-duration:9s}
 @keyframes fly{0%{transform:translate(0,60px) rotate(-7deg) scale(.72);opacity:0}12%{opacity:.95}35%{transform:translate(35px,-35px) rotate(6deg) scale(1.08)}60%{transform:translate(-30px,-105px) rotate(-5deg) scale(.98)}82%{opacity:.9}100%{transform:translate(20px,-230px) rotate(7deg) scale(.82);opacity:0}}
+
+/* ✨ Premium romantic theme */
+body{background:radial-gradient(circle at 50% 15%,#fff 0,#ffeaf3 30%,#ffc5d9 65%,#ff9fbd 100%);}
+body:before{content:"";position:fixed;inset:-30%;pointer-events:none;background:conic-gradient(from 0deg,#ff5b8a18,#ffffff35,#ff78a518,#ffffff22,#ff5b8a18);filter:blur(35px);animation:aurora 12s linear infinite;z-index:-1}
+@keyframes aurora{to{transform:rotate(360deg)}}
+.card{background:linear-gradient(145deg,#ffffffd9,#fff5f9cc);border:1px solid #ffffffdd;box-shadow:0 35px 100px #8f174d38,0 0 55px #ff6f9c20}
+.card:after{content:"";position:absolute;inset:8px;border-radius:35px;border:1px solid #ff86aa30;pointer-events:none}
+.brand{color:#c51f5a;text-shadow:0 2px 18px #ff4f8140}
+.quote{color:#7f2348;text-shadow:0 2px 20px #ff7fa62b;animation:quoteGlow 2.8s ease-in-out infinite}
+@keyframes quoteGlow{50%{text-shadow:0 2px 26px #ff5b8840}}
+.next{position:relative;overflow:hidden;background:linear-gradient(120deg,#ff3f78,#ff6f9c,#d92663,#ff4f81);background-size:300% 100%;animation:buttonGlow 4s ease infinite;box-shadow:0 12px 30px #d9276140,0 0 25px #ff4f8130;transition:.25s}
+.next:before{content:"";position:absolute;top:0;left:-120%;width:70%;height:100%;background:linear-gradient(90deg,transparent,#ffffff99,transparent);transform:skewX(-20deg);animation:shine 3.2s infinite}
+.next:active{transform:scale(.95)}
+@keyframes shine{55%,100%{left:140%}}@keyframes buttonGlow{50%{background-position:100% 0}}
+.hearts{filter:drop-shadow(0 0 12px #ff4f8180)}
+.spark{position:fixed;pointer-events:none;z-index:50;font-size:20px;animation:spark 900ms ease-out forwards}
+@keyframes spark{0%{opacity:1;transform:translate(0,0) scale(.5)}100%{opacity:0;transform:translate(var(--x),var(--y)) rotate(180deg) scale(1.4)}}
+.float-heart{position:fixed;pointer-events:none;z-index:2;animation:floatHeart 7s linear forwards;filter:drop-shadow(0 0 8px #ff5b8880)}
+@keyframes floatHeart{0%{opacity:0;transform:translateY(20px) scale(.5) rotate(-10deg)}12%{opacity:.75}100%{opacity:0;transform:translateY(-105vh) scale(1.15) rotate(25deg)}}
+.progress{position:absolute;left:18px;right:18px;bottom:13px;height:4px;border-radius:99px;background:#ff4f8118;overflow:hidden;z-index:3}.progress b{display:block;height:100%;width:0;background:linear-gradient(90deg,#ff4f81,#ffabc5);box-shadow:0 0 10px #ff4f8180;transition:width .5s}
+@media(max-width:600px){.card{width:94vw;height:90vh;margin:5vh auto;border-radius:34px}.quote{font-size:23px}.next{margin-top:32px}.brand{font-size:21px}.cloud span{font-size:16px}.card:after{border-radius:27px}}
 </style>
 </head>
 <body>
 <div class="bg">
 <i style="left:5%;font-size:25px;animation-delay:-1s">❤️</i><i style="left:18%;font-size:35px;animation-delay:-4s">💕</i><i style="left:32%;font-size:20px;animation-delay:-7s">💖</i><i style="left:47%;font-size:38px;animation-delay:-2s">❤️</i><i style="left:63%;font-size:27px;animation-delay:-6s">💕</i><i style="left:78%;font-size:42px;animation-delay:-3s">💖</i><i style="left:92%;font-size:22px;animation-delay:-8s">❤️</i>
 </div>
-<div class="card">
+<div class="card"><div class="progress"><b></b></div>
 <div class="brand">I Love B🤍</div>
 <section id="q0" class="page"><div class="hearts">❤️ ✨ 💕 ✨ ❤️</div><div class="num">1 / 39</div><div class="quote">Seni sevmek, kalbimin verdiği en güzel karar. ❤️</div><a class="next" href="#q1">💖 Daha güzel bir söz</a></section>
 <section id="q1" class="page"><div class="hearts">❤️ ✨ 💕 ✨ ❤️</div><div class="num">2 / 39</div><div class="quote">Gülüşün, içimde açan en güzel çiçek. 🌹</div><a class="next" href="#q2">💖 Daha güzel bir söz</a></section>
@@ -101,5 +122,17 @@ kalbimde kalan en güzel hikâyesin. ❤️
 Seni seviyorum B. ❤️‍🔥</p><a class="next" href="#q0">💞 Baştan başla</a></section>
 </div>
 <div class="cloud"><span>💕 GÜZELİM</span><span>❤️ AŞKIM</span><span>💖 BİTANEM</span><span>🥰 PRENSESİM</span><span>❤️ CANIM</span><span>💘 HAYATIM</span><span>🌹 BALIM</span><span>👑 KRALİÇEM</span><span>💗 GÜLÜM</span><span>✨ ÖMRÜM</span></div>
+
+<script>
+(()=>{
+const q=document.querySelectorAll('.page[id^="q"]');
+const bar=document.querySelector('.progress b');
+function update(){let m=location.hash.match(/q(\\d+)/);let n=m?+m[1]+1:(location.hash==='#poem'?40:1);bar.style.width=Math.min(100,n/40*100)+'%'}
+addEventListener('hashchange',update);update();
+function burst(x,y){['💗','💕','✨','💖','❤️'].forEach((e,i)=>{let s=document.createElement('span');s.className='spark';s.textContent=e;s.style.left=x+'px';s.style.top=y+'px';s.style.setProperty('--x',(Math.cos(i*1.25)*70)+'px');s.style.setProperty('--y',(Math.sin(i*1.25)*70-25)+'px');document.body.appendChild(s);setTimeout(()=>s.remove(),950)})}
+document.addEventListener('click',e=>{burst(e.clientX,e.clientY);});
+setInterval(()=>{let h=document.createElement('div');h.className='float-heart';h.textContent=['❤️','💕','💖','💗','💘'][Math.floor(Math.random()*5)];h.style.left=(5+Math.random()*90)+'vw';h.style.bottom='-30px';h.style.fontSize=(16+Math.random()*22)+'px';h.style.animationDuration=(5+Math.random()*4)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),9500)},900);
+})();
+</script>
 </body>
 </html>
